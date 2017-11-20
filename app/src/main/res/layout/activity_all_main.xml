@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ma.mybaidumap.AllMainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一界面"
+        android:id="@+id/button3_all"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第二界面"
+        android:id="@+id/button4_all"
+        android:layout_below="@+id/button3_all"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三节界面"
+        android:id="@+id/button5_all"
+        android:layout_below="@+id/button4_all"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第四界面"
+        android:id="@+id/button6_all"
+        android:layout_below="@+id/button5_all"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第五界面"
+        android:id="@+id/button7_all"
+        android:layout_below="@+id/button6_all"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第六界面"
+        android:id="@+id/button8_all"
+        android:layout_below="@+id/button7_all"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

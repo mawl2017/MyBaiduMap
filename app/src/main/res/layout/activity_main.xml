@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ma.mybaidumap.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_mylocation"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="我的位置"/>
+    <Button
+        android:id="@+id/btn_addpic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="添加覆盖物"/>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_top2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="46dp"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et_search"
+            android:hint="输入查询内容"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_search"
+            android:text="查 询"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_below="@+id/rl_top2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_Info"
+        android:clickable="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_Info"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:hint="错误信息"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
